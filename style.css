@@ -1,0 +1,200 @@
+:root{
+  --primaryFont: "Young Serif", system-ui;
+  --secFont: "Outfit", sans-serif;
+  --White: hsl(0, 0%, 100%);
+
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+
+  --Brown800: hsl(14, 45%, 36%);
+
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+}
+
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  font-family: var(--primaryFont);
+  font-weight: 400;
+
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--primaryFont);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+p{
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: var(--secFont);
+}
+ul{
+  font-family: var(--secFont);
+  list-style: inside;
+  list-style-type: disc;
+  margin-left: 15px;
+}
+img{
+  max-width: 100%;
+}
+#main{
+  background: var(--Stone100);
+  margin: 0 auto;
+  width: 90%;
+  padding: 60px 170px;
+}
+.content{
+  background: var(--White);
+  width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+ 
+}
+.content img{
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.content h1{
+  color: var(--Stone900);
+  font-size: 30px;
+
+}
+.content p{
+  color: var(--Stone600);
+  font-size: 13px;
+}
+.time{
+  background: var(--Rose50);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.time h3{
+  color: var(--Rose800);
+  font-family: var(--secFont);
+  font-size: 18px;
+}
+.time ul{
+  font-size: 14px;
+  color: var(--Stone600);
+}
+.time ul li{
+  margin-bottom: 10px;
+}
+.time ul li:last-child{
+  margin-bottom: 0;
+}
+.time ul li span,
+.Instruction ul li span{
+  color: var(--Stone900);
+  font-size: 16px;
+  font-weight: 500;
+}
+.Ingredient{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--Stone150);
+}
+.Ingredient h2{
+  color: var(--Brown800);
+  font-weight: normal;
+}
+.Ingredient ul{
+  font-size: 14px;
+  color: var(--Stone600);
+}
+.Ingredient ul li,
+.Instruction ul li{
+  margin-bottom: 10px;
+}
+.Instruction{
+  border-bottom: 1px solid var(--Stone150);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.Instruction h2,
+.Nutrition h2{
+  color: var(--Brown800);
+  font-weight: normal;
+}
+.Instruction ul{
+  list-style-type: decimal;
+  list-style-position: outside;
+  color: var(--Brown800);
+  font-size: 14px;
+  
+}
+.Instruction ul li{
+  color: var(--Stone600);
+}
+.Nutrition{
+
+}
+.Nutrition p{
+  color: var(--Stone600);
+  font-size: 13px;
+}
+.Nutrition .child{
+  border-bottom: 1px solid var(--Stone150);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} 
+.Nutrition .child:last-child{
+  border: none;
+  padding-bottom: 0;
+  }
+
+.Nutrition .child span{
+  font-family: var(--secFont);
+  font-size: 15px;
+  color: var(--Stone600);
+}
+.Nutrition .child span:last-child{
+  color: var(--Brown800);
+  font-weight: 600;
+}
+footer{
+  text-align: center;
+  color: var();
+}
+footer a{
+  color: var(--Brown800);
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+  color: var(--Rose800);
+}
+@media screen and (max-width: 1000px){
+  #main{
+    width: 100%;
+    padding: 0;
+  }
+  .content{
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px){
+  #main{
+    width: 100%;
+    padding: 0;
+  }
+  .content{
+    width: 100%;
+    padding: 20px;
+  }
+}
